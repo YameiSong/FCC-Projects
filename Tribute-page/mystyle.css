@@ -1,0 +1,37 @@
+#main {
+    background-color: #CCCC99;
+    color: #663366;
+}
+
+#title {
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #img {
+        height: 40%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #img {
+        height: 60%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #img {
+        height: 80%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #img {
+        height: 100%;
+    }
+}
