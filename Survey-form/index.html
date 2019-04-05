@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">健康生活调查</h1>
+        <p id="description">这是一个关于你的生活习惯健康度的调查问卷</p>
+        <form id="survey-form">
+            <div class="form-group row">
+                <label for="name" id="name-label" class="col-sm-4 col-form-label">姓名</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="name" placeholder="姓名" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" id="email-label" class="col-sm-4 col-form-label">邮箱</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="邮箱" required>
+                    <small id="emailHelp" class="form-text text-muted">我们不会把你的邮箱告诉别人。</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="number" id="number-label" class="col-sm-4 col-form-label">年龄</label>
+                <div class="col-sm-8">
+                    <input type="number" class="form-control" id="number" min="0" max="150" placeholder="年龄" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="dropdown" class="col-sm-4 col-form-label">睡眠时间</label>
+                <div class="col-sm-8">
+                    <select class="custom-select" id="dropdown">
+                        <option selected>选择你的每日睡眠时间</option>
+                        <option value="1">4-5小时</option>
+                        <option value="2">6-7小时</option>
+                        <option value="3">8-9小时</option>
+                        <option value="4">9-10小时</option>
+                        <option value="4">11-12小时</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="dietTypes" class="col-sm-4 col-form-label">你的饮食习惯是什么？</label>
+                <div class="col-sm-8">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="dietType1" name="dietTypeRatioButton" class="custom-control-input" value="plain">
+                        <label class="custom-control-label" for="dietType1">清淡：少油少盐少糖</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="dietType2" name="dietTypeRatioButton" class="custom-control-input" value="strong">
+                        <label class="custom-control-label" for="dietType2">重口：无辣不欢、爱吃油腻食物（四川火锅、烧烤）</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="dietType3" name="dietTypeRatioButton" class="custom-control-input" value="normal">
+                        <label class="custom-control-label" for="dietType3">二者之间</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="likeFoods" class="col-sm-4 col-form-label">选择你喜欢的食物</label>
+                <div class="col-sm-8">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="likeFood1" value="hotpot">
+                        <label class="custom-control-label" for="likeFood1">火锅</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="likeFood2" value="barbecue">
+                        <label class="custom-control-label" for="likeFood2">烧烤</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="likeFood3" value="salad">
+                        <label class="custom-control-label" for="likeFood3">沙拉</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="likeFood4" value="stir-fried">
+                        <label class="custom-control-label" for="likeFood4">炒菜</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="likeFood5" value="cold-dish">
+                        <label class="custom-control-label" for="likeFood5">卤菜</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="textarea" class="col-sm-4 col-form-label">你对健康的生活习惯的定义是什么？</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-sm-4"></div>
+                <div class="col-sm-8">
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
