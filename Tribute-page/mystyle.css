@@ -1,37 +1,73 @@
 #main {
     background-color: #CCCC99;
     color: #663366;
+    font-family: 'Alegreya', serif;
 }
 
 #title {
-
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 3em;
 }
 
+#abstract{
+    text-align: center;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+#img-div {
+    background-image: linear-gradient(to right, #CCCC99, #796358,  #CCCC99);
+    padding: 0 20px 0;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    max-width: 40%;
+}
+
+#img-caption {
+    text-align: center;
+    color: #d4d3c1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#tribute-info {
+    padding: 20px 30px 10px;
+}
+
+#tribute-link {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    #img {
-        height: 40%;
+@media (max-width: 768px) {
+    #tribute-info {
+        padding: 20px 80px 10px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    #img {
-        height: 60%;
+@media (max-width: 992px) {
+    #tribute-info {
+        padding: 20px 100px 10px;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #img {
-        height: 80%;
+@media (max-width: 1200px) {
+    #tribute-info {
+        padding: 20px 200px 10px;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    #img {
-        height: 100%;
+@media (min-width: 1201px) {
+    #tribute-info {
+        padding: 20px 300px 10px;
     }
 }
