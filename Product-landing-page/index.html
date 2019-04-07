@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav-bar">
+
+                <!-- logo and brand -->
+                <a class="navbar-brand" href="#">
+                    <img id="header-img"
+                        src="https://lh3.googleusercontent.com/Ax2wQYxjDITuZEpc6K9EDYPG7C839tb4PApia4Tmf18u8XehB-twqhVgDVPgxxExkr4=s180"
+                        alt="Logo image">
+                    Beauty Candy
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- nav items -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skinCareIntro" id="skinCareDropdown" role="button"
+                                data-toggle="collapse" data-target="#skinCareDropdownContent" aria-expanded="false">Skin
+                                Care</a>
+                            <div class="collapse" id="skinCareDropdownContent">
+                                <div class="dropdownItems">
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#">Toner</a>
+                                    <a href="#">Moisturizer</a>
+                                    <a href="#">Essence</a>
+                                    <a href="#">Cleanser</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#makeUpIntro" id="makeUpDropdown" role="button"
+                                data-toggle="collapse" data-target="#makeUpDropdownContent" aria-expanded="false">Make
+                                Up</a>
+                            <div class="collapse" id="makeUpDropdownContent">
+                                <div class="dropdownItems">
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#">Foundation</a>
+                                    <a href="#">Lipstick</a>
+                                    <a href="#">Contour</a>
+                                    <a href="#">Mascara</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUsIntro">About us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 pl-3 d-none d-lg-block" id="searchForm">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search product"
+                            aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main content -->
+
+    <!-- about us div -->
+    <div class="container mt-5" id="aboutUsIntro">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Join us, explore and become the beauty</h2>
+                <form id="form" class="mt-3" action="https://www.freecodecamp.com/email-submit">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email"
+                            placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn-success" value="JOIN NOW!">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <iframe id="video" src="https://www.youtube.com/watch?v=fScWgkt6wFI#action=share" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- end of about us div -->
+
+    <!-- skin care div -->
+    <div class="container mt-5" id="skinCareIntro">
+        <div class="row">
+            <div class="col-md-2">
+                <span class="glyphicon glyphicon-tint"></span>
+                <a href="#">Toner</a>
+            </div>
+            <div class="col-md-10">
+                <p data-dummytext=""></p>
+            </div>
+            <div class="col-md-2">
+                <span class="glyphicon glyphicon-tint"></span>
+                <a href="#">Moisturizer</a>
+            </div>
+            <div class="col-md-10">
+                <p data-dummytext=""></p>
+            </div>
+            <div class="col-md-2">
+                <span class="glyphicon glyphicon-tint"></span>
+                <a href="#">Essence</a>
+            </div>
+            <div class="col-md-10">
+                <p data-dummytext=""></p>
+            </div>
+            <div class="col-md-2">
+                <span class="glyphicon glyphicon-tint"></span>
+                <a href="#">Cleanser</a>
+            </div>
+            <div class="col-md-10">
+                <p data-dummytext=""></p>
+            </div>
+        </div>
+    </div>
+    <!-- end of skin care div -->
+
+    <!-- make up div -->
+    <div class="container" id="makeUpIntro">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <!-- end of make up div -->
+
+    <!-- end of main content -->
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- dummy text -->
+    <script src="http://dummytext.com/dt-1.0.min.js"></script><noscript>Powered by <a
+            href="http://dummytext.com">DummyText.com</a></noscript>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+/* fix the navbar items to top */
+.navbar-brand, #searchForm, .nav-item {
+    align-self: flex-start;
+}
+
+/* set style of narvbar brand */
+.navbar-brand {
+    font-size: x-large;
+}
+
+/* set one specific padding, so that navbar items won't slightly move when a dropdown menu shows up */
+#navbarSupportedContent {
+    padding: 10px;
+}
+
+/* set logo image */
+#header-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* set styles for navbar items */
+.nav-link {
+    padding-left: 1em;
+    width: 7em;
+    font-weight: bold;
+    font-size: large;
+}
+.dropdownItems a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: medium;
+}
+.dropdownItems a:hover {
+    color: #cbd3da;
+}
+
+/* ensure only one dropdown menu collapsed */
+/* ??? */
+
+/* set style of Join Us form */
+#aboutUsIntro h2 {
+    text-align: center;
+}
+#form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: x-large;
+}
