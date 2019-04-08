@@ -65,10 +65,13 @@
                             <a class="nav-link" href="#aboutUsIntro">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skinCareIntro">Skin Care 2</a>
+                            <a class="nav-link" href="#skinCareIntro">Skin Care</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#makeUpIntro">Make Up 2</a>
+                            <a class="nav-link" href="#makeUpIntro">Make Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#membership">Candy Membership</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0 pl-3 d-none d-lg-block" id="searchForm">
@@ -113,14 +116,14 @@
         <ul class="list-unstyled">
             <li class="media">
                 <img src="https://imgservice3.suning.cn/uimg1/b2c/image/moa1Dmjsb4_XysKhY17VYA.jpg_220w_220h_4e"
-                    class="mr-3" width=120px>
+                    class="mr-3">
                 <div class="media-body">
                     <h5 class="mt-0 mb-1">Toner</h5>
                     <p data-dummytext="p-w20"></p>
                 </div>
             </li>
             <li class="media my-4">
-                <img src="http://p2.ol-img.com/product/raw/1/23/5120ab33c349f.jpg" class="mr-3" width=120px>
+                <img src="http://p2.ol-img.com/product/raw/1/23/5120ab33c349f.jpg" class="mr-3">
                 <div class="media-body">
                     <h5 class="mt-0 mb-1">Moisturizer</h5>
                     <p data-dummytext="p-w20"></p>
@@ -128,7 +131,7 @@
             </li>
             <li class="media">
                 <img src="https://www.skii.com.cn/OP/img/product/rna-power-radical-new-age-essence/images/1a.jpg"
-                    class="mr-3" width=120px>
+                    class="mr-3">
                 <div class="media-body">
                     <h5 class="mt-0 mb-1">Essence</h5>
                     <p data-dummytext="p-w20"></p>
@@ -136,7 +139,7 @@
             </li>
             <li class="media">
                 <img src="https://m.cledepeau-beaute.com.cn/public/images/a9/e8/15/4024c1dd4a87c0664fe2252faad5a37a8456e9d6.png"
-                    class="mr-3" width=120px>
+                    class="mr-3">
                 <div class="media-body">
                     <h5 class="mt-0 mb-1">Cleanser</h5>
                     <p data-dummytext="p-w20"></p>
@@ -149,42 +152,73 @@
     <!-- make up div -->
     <div class="container mt-5" id="makeUpIntro">
         <h2>Make Up</h2>
-        <div class="card-deck">
-            <div class="card">
+        <ul class="list-unstyled">
+            <li class="media">
                 <img src="https://www.giorgioarmanibeauty-usa.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-gab-master-catalog/default/dw09b62d99/productimages/3605521495778.jpg?sw=620&sh=620&sm=fit&q=70"
-                    class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Foundation</h5>
-                    <p class="card-text" data-dummytext="p-w20"></p>
+                    class="mr-3">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Foundation</h5>
+                    <p data-dummytext="p-w20"></p>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="media my-4">
                 <img src="https://imgservice2.suning.cn/uimg1/b2c/image/_qeJ8-7_XY-X6cN9ZzhAiA.jpg_400w_400h_4e"
-                    class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Lipstick</h5>
-                    <p class="card-text" data-dummytext="p-w20"></p>
+                    class="mr-3">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Lipstick</h5>
+                    <p data-dummytext="p-w20"></p>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="media">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfcfn0e3CRK3E0c5oWvT-LWUk3xONVmpQxwAK8Sgi0Fea5Tqr1"
-                    class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Contour</h5>
-                    <p class="card-text" data-dummytext="p-w20"></p>
+                    class="mr-3">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Contour</h5>
+                    <p data-dummytext="p-w20"></p>
+                </div>
+            </li>
+            <li class="media">
+                <img src="http://oss.huangye88.net/live/import/from1688/997zzp2027799297zzp1906960023.jpg" class="mr-3">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Mascara</h5>
+                    <p data-dummytext="p-w20"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- end of make up div -->
+
+    <!-- membership div (use css flexbox) -->
+    <div class="container mt-5" id="membership">
+        <h2>Candy Membership</h2>
+        <div class="flex-container" id="cardSet">
+            <div class="card">
+                <div class="card-header">Free</div>
+                <div class="card-content">
+                    <p><span class="price">$0 </span><span class="month">/ mo</span></p>
+                    <p class="explain">Molestie eros a iaculis tellus. Ipsum morbi ornare sed est.</p>
+                    <button type="button" class="btn btn-info">Subscribe</button>
                 </div>
             </div>
             <div class="card">
-                <img src="http://oss.huangye88.net/live/import/from1688/997zzp2027799297zzp1906960023.jpg"
-                    class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Mascara</h5>
-                    <p class="card-text" data-dummytext="p-w20"></p>
+                <div class="card-header">Pro</div>
+                <div class="card-content">
+                    <p><span class="price">$10 </span><span class="month">/ mo</span></p>
+                    <p class="explain">Molestie eros a iaculis tellus. Ipsum morbi ornare sed est.</p>
+                    <button type="button" class="btn btn-info">Subscribe</button>
+                </div>
+            </div>
+            <div class="card" id="lastCard">
+                <div class="card-header">Supreme</div>
+                <div class="card-content">
+                    <p><span class="price">$20 </span><span class="month">/ mo</span></p>
+                    <p class="explain">Molestie eros a iaculis tellus. Ipsum morbi ornare sed est.</p>
+                    <button type="button" class="btn btn-info">Subscribe</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end of make up div -->
+    <!-- end of membership div -->
 
     <!-- end of main content -->
 
@@ -202,6 +236,7 @@
     <!-- dummy text -->
     <script src="http://dummytext.com/dt-1.0.min.js"></script><noscript>Powered by <a
             href="http://dummytext.com">DummyText.com</a></noscript>
+
 </body>
 
 </html>
