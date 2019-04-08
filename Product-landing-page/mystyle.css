@@ -40,16 +40,29 @@
 /* ensure only one dropdown menu collapsed */
 /* ??? */
 
-/* set style of Join Us form */
-#aboutUsIntro h2 {
-    text-align: center;
-}
 #form {
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.media-body {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 h2 {
-    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+#aboutUsIntro {
+    padding-top: 100px;
+}
+
+.card {
+    min-width: 250px;
+}
+
+.card img {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
 }

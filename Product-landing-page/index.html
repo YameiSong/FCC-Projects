@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
-<body>
+<body class="pb-5">
 
-    <header id="header">
+    <header id="header" class="fixed-top">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav-bar">
 
@@ -32,14 +32,15 @@
                 <!-- nav items -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skinCareIntro" id="skinCareDropdown" role="button"
-                                data-toggle="collapse" data-target="#skinCareDropdownContent" aria-expanded="false">Skin
+                        <!-- The following 2 dropdown menu is disabled, for homework requirement -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" id="skinCareDropdown" role="button" data-toggle="collapse"
+                                data-target="#skinCareDropdownContent" aria-expanded="false">Skin
                                 Care</a>
                             <div class="collapse" id="skinCareDropdownContent">
                                 <div class="dropdownItems">
                                     <div class="dropdown-divider"></div>
-                                    <a href="#">Toner</a>
+                                    <a href="#Toner">Toner</a>
                                     <a href="#">Moisturizer</a>
                                     <a href="#">Essence</a>
                                     <a href="#">Cleanser</a>
@@ -47,21 +48,27 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#makeUpIntro" id="makeUpDropdown" role="button"
-                                data-toggle="collapse" data-target="#makeUpDropdownContent" aria-expanded="false">Make
+                            <a class="nav-link" href="#" id="makeUpDropdown" role="button" data-toggle="collapse"
+                                data-target="#makeUpDropdownContent" aria-expanded="false">Make
                                 Up</a>
                             <div class="collapse" id="makeUpDropdownContent">
                                 <div class="dropdownItems">
                                     <div class="dropdown-divider"></div>
-                                    <a href="#">Foundation</a>
+                                    <a href="#Foundation">Foundation</a>
                                     <a href="#">Lipstick</a>
                                     <a href="#">Contour</a>
                                     <a href="#">Mascara</a>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutUsIntro">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skinCareIntro">Skin Care 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#makeUpIntro">Make Up 2</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0 pl-3 d-none d-lg-block" id="searchForm">
@@ -77,17 +84,18 @@
     <!-- main content -->
 
     <!-- about us div -->
-    <div class="container mt-5" id="aboutUsIntro">
+    <div class="container" id="aboutUsIntro">
+        <h2>Join us</h2>
         <div class="row">
             <div class="col-md-6">
-                <h2>Join us, explore and become the beauty</h2>
+                <p class="text-muted" data-dummytext="p-w10"></p>
                 <form id="form" class="mt-3" action="https://www.freecodecamp.com/email-submit">
                     <div class="form-group">
                         <input type="email" class="form-control" name="email" id="email"
                             placeholder="Enter your email address" required>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="form-control btn-success" value="JOIN NOW!">
+                        <input id="submit" type="submit" class="form-control btn-success" value="JOIN NOW!">
                     </div>
                 </form>
             </div>
@@ -101,46 +109,79 @@
 
     <!-- skin care div -->
     <div class="container mt-5" id="skinCareIntro">
-        <div class="row">
-            <div class="col-md-2">
-                <span class="glyphicon glyphicon-tint"></span>
-                <a href="#">Toner</a>
-            </div>
-            <div class="col-md-10">
-                <p data-dummytext=""></p>
-            </div>
-            <div class="col-md-2">
-                <span class="glyphicon glyphicon-tint"></span>
-                <a href="#">Moisturizer</a>
-            </div>
-            <div class="col-md-10">
-                <p data-dummytext=""></p>
-            </div>
-            <div class="col-md-2">
-                <span class="glyphicon glyphicon-tint"></span>
-                <a href="#">Essence</a>
-            </div>
-            <div class="col-md-10">
-                <p data-dummytext=""></p>
-            </div>
-            <div class="col-md-2">
-                <span class="glyphicon glyphicon-tint"></span>
-                <a href="#">Cleanser</a>
-            </div>
-            <div class="col-md-10">
-                <p data-dummytext=""></p>
-            </div>
-        </div>
+        <h2>Skin Care</h2>
+        <ul class="list-unstyled">
+            <li class="media">
+                <img src="https://imgservice3.suning.cn/uimg1/b2c/image/moa1Dmjsb4_XysKhY17VYA.jpg_220w_220h_4e"
+                    class="mr-3" width=120px>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Toner</h5>
+                    <p data-dummytext="p-w20"></p>
+                </div>
+            </li>
+            <li class="media my-4">
+                <img src="http://p2.ol-img.com/product/raw/1/23/5120ab33c349f.jpg" class="mr-3" width=120px>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Moisturizer</h5>
+                    <p data-dummytext="p-w20"></p>
+                </div>
+            </li>
+            <li class="media">
+                <img src="https://www.skii.com.cn/OP/img/product/rna-power-radical-new-age-essence/images/1a.jpg"
+                    class="mr-3" width=120px>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Essence</h5>
+                    <p data-dummytext="p-w20"></p>
+                </div>
+            </li>
+            <li class="media">
+                <img src="https://m.cledepeau-beaute.com.cn/public/images/a9/e8/15/4024c1dd4a87c0664fe2252faad5a37a8456e9d6.png"
+                    class="mr-3" width=120px>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Cleanser</h5>
+                    <p data-dummytext="p-w20"></p>
+                </div>
+            </li>
+        </ul>
     </div>
     <!-- end of skin care div -->
 
     <!-- make up div -->
-    <div class="container" id="makeUpIntro">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
+    <div class="container mt-5" id="makeUpIntro">
+        <h2>Make Up</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://www.giorgioarmanibeauty-usa.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-gab-master-catalog/default/dw09b62d99/productimages/3605521495778.jpg?sw=620&sh=620&sm=fit&q=70"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Foundation</h5>
+                    <p class="card-text" data-dummytext="p-w20"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://imgservice2.suning.cn/uimg1/b2c/image/_qeJ8-7_XY-X6cN9ZzhAiA.jpg_400w_400h_4e"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lipstick</h5>
+                    <p class="card-text" data-dummytext="p-w20"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfcfn0e3CRK3E0c5oWvT-LWUk3xONVmpQxwAK8Sgi0Fea5Tqr1"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Contour</h5>
+                    <p class="card-text" data-dummytext="p-w20"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="http://oss.huangye88.net/live/import/from1688/997zzp2027799297zzp1906960023.jpg"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mascara</h5>
+                    <p class="card-text" data-dummytext="p-w20"></p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end of make up div -->
