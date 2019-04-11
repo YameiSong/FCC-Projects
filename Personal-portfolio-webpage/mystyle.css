@@ -47,7 +47,7 @@ a {
     justify-content: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 300px) {
     .card-columns {
       -webkit-column-count: 2;
       -moz-column-count: 2;
