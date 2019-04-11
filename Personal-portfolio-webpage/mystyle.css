@@ -23,12 +23,6 @@ a {
     padding-top: 35vh;
 }
 
-#projects {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    height: auto;
-}
-
 #contact {
     background-color: #99ccff;
     padding-top: 30vh;
@@ -44,7 +38,9 @@ a {
     font-size: 1.2em;
 }
 
-.icon {
+.icon img, p {
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     justify-content: center;
 }
@@ -68,8 +64,16 @@ a {
     border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-title {
+    text-align: center;
     font-weight: normal;
     margin: auto;
+}
+
+/* position of #projects */
+#projects {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: auto;
 }
 
 @media (min-width: 924px) {
