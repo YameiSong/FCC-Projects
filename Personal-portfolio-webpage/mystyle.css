@@ -47,22 +47,43 @@ a {
     justify-content: center;
 }
 
-@media (min-width: 300px) {
+/* Extra small devices (portrait phones, less than 576px) */
+.card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+.card-columns .card {
+    display: inline-block;
+    width: 75%;
+    margin-bottom: 1.75rem;
+}
+#projects {
+    height: auto;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
     .card-columns {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
     }
     .card-columns .card {
         display: inline-block;
-        width: 75%;
+        width: 100%;
         margin-bottom: 1.75rem;
-      }
-  }
+    }
+    #projects {
+        height: 100vh;
+    }
+}
 
 .card img {
-    max-height: 300px;
+    max-height: 30vh;
+    max-width: 20vw;
     height: auto;
+    width: auto;
 }
 
 .card-body {
