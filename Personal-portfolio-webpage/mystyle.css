@@ -10,12 +10,12 @@ a {
 #navbar {
     background-color: rgba(153, 151, 151, 0.267);
     font-size: 1.2em;
-    width: 100%;
 }
 
-#welcome-section, #projects, #contact {
+#welcome-section, #contact {
     height: 100vh;
     min-height: 55vh;
+    margin: 0 -15px;
 }
 
 #welcome-section {
@@ -24,7 +24,9 @@ a {
 }
 
 #projects {
-    padding-top: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: auto;
 }
 
 #contact {
@@ -38,7 +40,6 @@ a {
     padding-bottom: 1em;
     text-align: center;
 }
-
 .myWord p {
     font-size: 1.2em;
 }
@@ -49,27 +50,37 @@ a {
 }
 
 .card-deck {
-    margin-bottom: 1em;
+    justify-content: center;
 }
-
-.card {
-    align-self: center;
-    margin: 40px 100px;
-}
-
-.card img {
-    max-height: 20vh;
-    /* max-width: 20vw; */
+.card-deck .card {
+    width: 80%;
     height: auto;
-    width: auto;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
+.card img {
+    max-width: 460px;
+    max-height: 460px;
+}
 .card-body {
     padding: 0.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
-
 .card-title {
     font-weight: normal;
     margin: auto;
+}
+
+@media (min-width: 924px) {
+    #projects {
+        padding-top: 10vh;
+    }
+}
+
+@media (min-width: 1848px) {
+    #projects {
+        height: 100vh;
+        padding-top: 25vh;
+    }
 }
