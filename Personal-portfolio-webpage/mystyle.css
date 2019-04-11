@@ -1,6 +1,6 @@
-.container-fluid {
-    padding: 0;
-    margin: 0;
+.row {
+    width: 40%;
+    margin: auto;
 }
 
 a {
@@ -15,25 +15,28 @@ a {
 
 #welcome-section, #projects, #contact {
     height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+    min-height: 55vh;
 }
 
 #welcome-section {
     background-color: #ccccff;
+    padding-top: 35vh;
+}
+
+#projects {
+    padding-top: 15vh;
 }
 
 #contact {
     background-color: #99ccff;
+    padding-top: 30vh;
 } 
 
 .myWord {
     font-family: 'Caveat', cursive;
     padding-top: 1em;
     padding-bottom: 1em;
+    text-align: center;
 }
 
 .myWord p {
@@ -45,45 +48,13 @@ a {
     justify-content: center;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-.card-columns {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    width: 100%;
-    margin: auto;
-}
-.card {
-    display: inline-block;
-    margin-bottom: 1.75rem;
-}
-.card img {
-    min-width: 200px;
-    min-height: 200px;
-}
-#projects {
-    height: auto;
+.card-deck {
+    margin-bottom: 1em;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-        width: 80%;
-        margin: auto;
-    }
-    .card {
-        display: inline-block;
-        margin-bottom: 1.75rem;
-        max-width: 50%;
-        min-width: 300px;
-        min-height: 200px;
-    }
-    #projects {
-        height: 100vh;
-    }
+.card {
+    align-self: center;
+    margin: 40px 100px;
 }
 
 .card img {

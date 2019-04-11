@@ -17,7 +17,7 @@
     <div class="container-fluid">
 
         <nav id="navbar" class="fixed-top">
-            <ul class="nav">
+            <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="#welcome-section">About</a>
                 </li>
@@ -31,101 +31,96 @@
         </nav>
 
         <section id="welcome-section">
-            <!-- must wrap them up, otherwise these block-level elements will stack -->
-            <div class="whole">
-                <div class="myWord">
-                    <h1>Hey I'm Yummy.</h1>
-                    <p>a future full-stack web developer</p>
-                </div>
+            <div class="myWord">
+                <h1>Hey I'm Yummy.</h1>
+                <p>a future full-stack web developer</p>
             </div>
         </section>
 
         <section id="projects">
-            <div class="whole">
-                <div class="myWord">
-                    <!-- Show below at xs devices -->
-                    <h1 class="d-none d-sm-block">These are some of my projects...</h1>
-                    <!-- Show below at sm and above devices -->
-                    <h1 class="d-block d-sm-none">These are some of</h1>
-                    <h1 class="d-block d-sm-none">my projects...</h1>
-                </div>
-                <div class="card-columns">
-                    <a href="https://codepen.io/YameiSong/full/BEKJGx" target="_blank">
-                        <div class="card project-tile">
-                            <img src="images/Goddess.PNG" class="card-img-top" alt="Tribute page">
-                            <div class="card-body">
-                                <h5 class="card-title">Tribute page</h5>
-                            </div>
+            <div class="myWord">
+                <!-- Show below at xs devices -->
+                <h1 class="d-none d-sm-block">These are some of my projects...</h1>
+                <!-- Show below at sm and above devices -->
+                <h1 class="d-block d-sm-none">These are some of</h1>
+                <h1 class="d-block d-sm-none">my projects...</h1>
+            </div>
+            <div class="card-deck">
+                <a href="https://codepen.io/YameiSong/full/BEKJGx" target="_blank">
+                    <div class="card project-tile">
+                        <img src="images/Goddess.PNG" class="card-img-top" alt="Tribute page">
+                        <div class="card-body">
+                            <h5 class="card-title">Tribute page</h5>
                         </div>
-                    </a>
-                    <a href="https://codepen.io/YameiSong/full/axZoRw" target="_blank">
-                        <div class="card project-tile">
-                            <img src="images/Survey.PNG" class="card-img-top" alt="Survey form">
-                            <div class="card-body">
-                                <h5 class="card-title">Survey form</h5>
-                            </div>
+                    </div>
+                </a>
+                <a href="https://codepen.io/YameiSong/full/axZoRw" target="_blank">
+                    <div class="card project-tile">
+                        <img src="images/Survey.PNG" class="card-img-top" alt="Survey form">
+                        <div class="card-body">
+                            <h5 class="card-title">Survey form</h5>
                         </div>
-                    </a>
-                    <a href="https://codepen.io/YameiSong/full/vMXpQG" target="_blank">
-                        <div class="card project-tile">
-                            <img src="images/Product.PNG" class="card-img-top" alt="Product landing page">
-                            <div class="card-body">
-                                <h5 class="card-title">Product landing page</h5>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-deck">
+                <a href="https://codepen.io/YameiSong/full/vMXpQG" target="_blank">
+                    <div class="card project-tile">
+                        <img src="images/Product.PNG" class="card-img-top" alt="Product landing page">
+                        <div class="card-body">
+                            <h5 class="card-title">Product landing page</h5>
                         </div>
-                    </a>
-                    <a href="https://codepen.io/YameiSong/full/axBaEa" target="_blank">
-                        <div class="card project-tile">
-                            <img src="images/Document.PNG" class="card-img-top" alt="Technical document">
-                            <div class="card-body">
-                                <h5 class="card-title">Technical document</h5>
-                            </div>
+                    </div>
+                </a>
+                <a href="https://codepen.io/YameiSong/full/axBaEa" target="_blank">
+                    <div class="card project-tile">
+                        <img src="images/Document.PNG" class="card-img-top" alt="Technical document">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical document</h5>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section id="contact">
-            <div class="whole">
-                <div class="myWord">
-                    <h1>Let's work together...</h1>
-                    <p>How do you like my portfolio?</p>
+            <div class="myWord">
+                <h1>Let's work together...</h1>
+                <p>How do you like my portfolio?</p>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 icon">
+                    <div class="whole">
+                        <a href="https://www.facebook.com/profile.php?id=100014631044624" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/facebook.svg" alt="Facebook">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 col-md-3 icon">
+                <div class="col-6 col-md-3 icon">
+                    <a href="https://github.com/YameiSong" target="_blank" rel="noopener noreferrer" id="">
                         <div class="whole">
-                            <a href="https://www.facebook.com/profile.php?id=100014631044624" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="images/facebook.svg" alt="Facebook">
-                                <p>Facebook</p>
-                            </a>
+                            <img src="images/github.svg" alt="Github">
+                            <p>Github</p>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-3 icon">
-                        <a href="https://github.com/YameiSong" target="_blank" rel="noopener noreferrer" id="">
-                            <div class="whole">
-                                <img src="images/github.svg" alt="Github">
-                                <p>Github</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-3 icon">
-                        <a href="mailto:ymsongx@icloud.com">
-                            <div class="whole">
-                                <img src="images/email.svg" alt="Email">
-                                <p>Email</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-3 icon">
-                        <a href="tel:+8600000000000">
-                            <div class="whole">
-                                <img src="images/phone.svg" alt="Phone">
-                                <p>Phone</p>
-                            </div>
-                        </a>
-                    </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 icon">
+                    <a href="mailto:ymsongx@icloud.com">
+                        <div class="whole">
+                            <img src="images/email.svg" alt="Email">
+                            <p>Email</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 icon">
+                    <a href="tel:+8600000000000">
+                        <div class="whole">
+                            <img src="images/phone.svg" alt="Phone">
+                            <p>Phone</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
