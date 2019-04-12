@@ -1,0 +1,25 @@
+/* move the main content down a little, so that it will not be overlapped by the navbar */
+body {
+    padding-top: 100px;
+}
+
+/* fix the navbar items to top */
+.navbar {
+    align-items: flex-start;
+}
+
+/* set one specific padding and min-width, so that navbar items won't slightly move when a dropdown menu shows up */
+.nav-item {
+    min-width: 80px;
+}
+
+/* set styles for navbar items */
+.dropdownItems a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: medium;
+}
+.dropdownItems a:hover {
+    color: #cbd3da;
+}
