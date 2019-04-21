@@ -22,20 +22,19 @@ function convertToRoman(num) {
 
     for (let j = 0; j < romanChars.length; j++) {
         let curChar = romanChars[j];
-        let preChar = romanChars[j - 1];
-        let grandChar = romanChars[j - 2];
-        // console.log(curChar, preChar, grandChar);
+        let preChar = romanChars[j - 1]; // the char before curChar
+        let grandChar = romanChars[j - 2]; // the char before preChar
         
         let curCharTime = romanCharTimes[curChar];
         let preCharTime = romanCharTimes[preChar];
-        console.log(curCharTime, preCharTime);
-        if (curCharTime == 4) { 
-            if (preCharTime == 0) {
+
+        if (curCharTime == 4) { // if some char has appeared 4 times
+            if (preCharTime == 0) { // case: CXXXX => XL
                 romanNum += (curChar + preChar);
-                console.log(romanNum);
             }
-            else {
+            else { // case: LXXXX => XC
                 if (romanNum.length > 0) {
+                    // delete preChar
                     romanNum = romanNum.slice(0, romanNum.length - 1);
                 }
                 romanNum += (curChar + grandChar);
