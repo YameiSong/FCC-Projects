@@ -1,10 +1,10 @@
 function checkCashRegister(price, cash, cid) {
-    var output = {
+    let output = {
         status: null,
         change: []
     };
-
-    const priceUnit = {
+    
+    let priceUnit = {
         "PENNY": 0.01,
         "NICKEL": 0.05,
         "DIME": 0.1,
@@ -33,33 +33,30 @@ function checkCashRegister(price, cash, cid) {
         output.change = cid;
     }
     else {
+        console.log("valueText\tidealValue\tactualValue\tselectValue\tleftChange");
         for (let i = cid.length - 1; i >= 0; i--) {
-            var valueText = cid[i][0];
-            var idealValue = leftChange - leftChange % priceUnit[valueText];
-            var actualValue = cid[i][1];
-            if (actualValue > idealValue) {
-                if (idealValue != 0) output.change.push([valueText, idealValue]);
-                leftChange = parseFloat(leftChange - idealValue).toFixed(2);
-                console.log(output.change);
-            }
-            else {
-                if (actualValue != 0) output.change.push([valueText, actualValue]);
-                leftChange = parseFloat(leftChange - actualValue).toFixed(2);
-                console.log(output.change);
-            }
-            console.log(valueText, idealValue, actualValue, leftChange);
+            let valueText = cid[i][0];
+            let idealValue = leftChange - leftChange % priceUnit[valueText];
+            let actualValue = cid[i][1];
 
-            if (leftChange == 0) {
-                output.status = "OPEN";
+            let selectValue = Math.min(idealValue, actualValue);
+            if (selectValue > 0) {
+                output.change.push([valueText, selectValue]);
+                leftChange = (leftChange - selectValue).toFixed(2);
             }
-            else {
-                output.status = "INSUFFICIENT_FUNDS";
-                output.change = [];
-            }
+
+            console.log(valueText,"\t", idealValue,"\t", actualValue,"\t",selectValue,"\t", leftChange);
+        }
+        if (leftChange == 0) {
+            output.status = "OPEN";
+        }
+        else {
+            output.status = "INSUFFICIENT_FUNDS";
+            output.change = [];
         }
     }
 
-    console.log(output.status, output.change.length);
+    console.log("\n",output.status);
     for (let i = 0; i < output.change.length; i++) {
         console.log(output.change[i]);
     }
