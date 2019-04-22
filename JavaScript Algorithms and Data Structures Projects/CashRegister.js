@@ -24,15 +24,14 @@ function checkCashRegister(price, cash, cid) {
     }
     // console.log(cidSum, leftChange);
 
-    // cash-in-drawer is less than the change due
-    if (leftChange > cidSum) {
+    if (leftChange > cidSum) { // cash-in-drawer is less than the change due
         output.status = "INSUFFICIENT_FUNDS";
     }
-    else if (leftChange == cidSum) {
+    else if (leftChange == cidSum) { // cash-in-drawer equals to the exact change
         output.status = "CLOSED";
         output.change = cid;
     }
-    else {
+    else { // cash-in-drawer is more than the change due
         console.log("valueText\tidealValue\tactualValue\tselectValue\tleftChange");
         for (let i = cid.length - 1; i >= 0; i--) {
             let valueText = cid[i][0];
@@ -47,10 +46,10 @@ function checkCashRegister(price, cash, cid) {
 
             console.log(valueText,"\t", idealValue,"\t", actualValue,"\t",selectValue,"\t", leftChange);
         }
-        if (leftChange == 0) {
+        if (leftChange == 0) { // can give change
             output.status = "OPEN";
         }
-        else {
+        else { // can't five change because of no required money combination
             output.status = "INSUFFICIENT_FUNDS";
             output.change = [];
         }
